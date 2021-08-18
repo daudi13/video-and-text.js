@@ -1,3 +1,10 @@
+//add active class on click
+const dot = document.querySelector('.dot');
+dot.onclick = function () {
+    dot.classList.toggle('active')
+}
+
+
 document.addEventListener('mousemove', function (e) {
     const dot = document.querySelector('.dot');
     dot.style.left = e.pageX + 'px';
