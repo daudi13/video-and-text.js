@@ -93,10 +93,22 @@
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
+  mix-blend-mode: multiply;
+}
+
+.sec video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sec.active h2 {
   color: #000;
   background: #fff;
+  mix-blend-mode: screen;
 }
 /*# sourceMappingURL=main.css.map */
