@@ -55,4 +55,25 @@
         box-shadow: 0 0 0 200vh #000;
         border: 2px solid #fff;
     }
+
+    h2 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40vw;
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        background: #000;
+        user-select: none;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.sec.active h2 {
+    color: #000;
+    background: #fff;
 }

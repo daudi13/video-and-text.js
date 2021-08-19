@@ -69,4 +69,34 @@
           box-shadow: 0 0 0 200vh #000;
   border: 2px solid #fff;
 }
+
+.sec h2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40vw;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sec.active h2 {
+  color: #000;
+  background: #fff;
+}
 /*# sourceMappingURL=main.css.map */
