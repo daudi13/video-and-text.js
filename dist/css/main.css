@@ -21,7 +21,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ff0;
+  background: #111;
 }
 
 .sec .dot {
@@ -33,5 +33,29 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   cursor: default;
+}
+
+.sec .dot:active {
+  -webkit-box-shadow: 0 0 0 200vh #fff;
+          box-shadow: 0 0 0 200vh #fff;
+}
+
+.sec .dot::before {
+  content: 'Light mode';
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  white-space: nowrap;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.sec .dot.active::before {
+  content: 'Dark Mode';
+  color: #000;
+  border: 2px solid #000;
 }
 /*# sourceMappingURL=main.css.map */
