@@ -25,9 +25,11 @@
         border-radius: 50%;
         transform: translate(-50%, -50%);
         cursor: default;
+        transition: box-shadow 0.5s;
 
-        &:active {
+        &:active { //on hold
             box-shadow: 0 0 0 200vh #fff;
+            border: 2px solid #000;
         }
 
         &::before {
@@ -47,5 +49,10 @@
             color: #000;
             border: 2px solid #000
         }
+    }
+
+    .dot.active:active {
+        box-shadow: 0 0 0 200vh #000;
+        border: 2px solid #fff;
     }
 }

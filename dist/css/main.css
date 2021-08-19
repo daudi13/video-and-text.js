@@ -33,11 +33,16 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   cursor: default;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 
 .sec .dot:active {
   -webkit-box-shadow: 0 0 0 200vh #fff;
           box-shadow: 0 0 0 200vh #fff;
+  border: 2px solid #000;
 }
 
 .sec .dot::before {
@@ -57,5 +62,11 @@
   content: 'Dark Mode';
   color: #000;
   border: 2px solid #000;
+}
+
+.sec .dot.active:active {
+  -webkit-box-shadow: 0 0 0 200vh #000;
+          box-shadow: 0 0 0 200vh #000;
+  border: 2px solid #fff;
 }
 /*# sourceMappingURL=main.css.map */
