@@ -33,7 +33,7 @@
         }
 
         &::before {
-            content: 'Light mode';
+            content: '';
             position: absolute;
             top: 50%;
             left: 50px;
@@ -45,7 +45,7 @@
         }
 
         &.active::before {
-            content: 'Dark Mode';
+            content: '';
             color: #000;
             border: 2px solid #000
         }
